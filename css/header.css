@@ -99,7 +99,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 100px;
+  padding-top: 160px;
   width: 100%;
   color: #fff;
   text-align: center;
@@ -129,7 +129,7 @@
 
 /* Container de cada link com imagem + texto */
 .caixainteira {
-  padding: 5px 0;
+  padding: 5px;
 }
 
 /* Link que contém imagem e texto lado a lado */
@@ -148,6 +148,25 @@
 }
 
 .learnmorebtn:hover {
+  transform: translateY(-2px);
+  background-color: #b7d7ae; /* leve destaque no hover */
+}
+/* Link que contém imagem e texto lado a lado */
+.learnmorebtnf {
+  display: flex;
+  align-items: center;
+  gap: 10px;            /* espaço entre imagem e texto */
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 20px;
+  transition: transform 0.1s ease-in-out;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.learnmorebtnf:hover {
   transform: translateY(-2px);
   background-color: #b7d7ae; /* leve destaque no hover */
 }
