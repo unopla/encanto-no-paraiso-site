@@ -88,9 +88,6 @@
     height: 30px;
   }
 }
-#fim{
-	padding:80px;
-}
 /* fim responsividade */
 
 /* fim cabeçalho */
@@ -102,7 +99,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 150px;
+  padding-top: 100px;
   width: 100%;
   color: #fff;
   text-align: center;
