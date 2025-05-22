@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #5F634F;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* cabeçalho */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo à esquerda, menu à direita */
+  position: fixed;
+  width: 100%;
+  background-color: #CFE8C9;
+  z-index: 1000;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  padding:1px
+}
+
+#titulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  color: #5D3A00;
+  height:auto;
+}
+
+#menu {
+  display: flex;
+  gap: 50px;
+  color: #556B2F;
+  font-size: 18px;
+  height:auto;
+  padding-right:60px
+}
+.bottom:hover{
+	transform: translateY(-2px);
+	background-color: #b7d7ae;
+}
+.bottom {
+	 display: flex;
+     justify-content: center;  /* Centraliza horizontalmente */
+     align-items: center;      /* Centraliza verticalmente */
+     height:30px;
+	 width:90px;
+	 border-radius:10px;
+}
+.bottom1{
+  color:#556B2F;
+  text-decoration: none;
+}
+/* fim cabeçalho */
+#fim{
+  padding: 50px;
+}
+/* fim cabeçalho */
+
+
+
+
+
+
+
+/* footer */
+/* parte dos tres quadradinhos com informaçoes  */
+.rodape {
+  display: flex;
+  flex-wrap: wrap;         /* Centraliza os itens filhos */
+  align-items: center;     /* Centraliza verticalmente dentro da altura */
+  height: 300px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.infos {
+  display:flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 200px;
+  background-color: #CFE8C9;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  padding:20px;
+}
+
+#titlerodape{
+padding: 15px;
+font-size: 17px;
+}
+/* caixa das escritas e fotos do info */
+.caixainteira{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+}
+.caixainteira:hover {
+  transform: translateY(-2px);
+}
+
+/* imagens do lado das escritas da parte dos contatos  */
+.img{
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+/* imagen das redes sociais  */
+.imgr{
+  display: flex;
+  width: 25px;
+  height: 25px;
+
+}
+/* botões e links permanecem como já tinha */
+.learnmorebtn {
+  display: block;
+  color:black;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  font-size: 17px;
+}
+.learnmorebtn:hover {
+  transform: translateY(-2px);
+}

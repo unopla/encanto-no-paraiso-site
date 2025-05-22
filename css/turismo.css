@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #5F634F;
+    display: flex;
+    flex-direction: column; 
+}
+/* fim cabeçalho */
+#fim{
+  padding: 50px;
+}
+
+/* Sobre as cabanas texto depois cabeçalho complicado */
+#inicio{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom:100px;
+}
+#quadrado {
+  text-align: center;
+  max-width: 1100px;
+  height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px; 
+}
+#titlediv{
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+#titletexto{
+  max-width: 800px;
+  color:#e9e3d0 ;
+  font-size: 32px;
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 24px;
+}
+
+#nossa{
+  padding: 20px;
+}
+/* caixa texto sobre */
+#textocaixa{
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+/* texto sobre  */
+#texto {
+  max-width: 1200px;     /* Define uma largura agradável para leitura */  
+  font-size: 24px;    /* Tamanho de texto ajustável */
+  line-height: 1.6;     /* Espaçamento entre linhas para melhorar a legibilidade */
+  font-family: "Georgia", serif;
+  color: #e9e3d0 ;
+}
+/* sobre o turismo */
+/* texto direita */
+
+.turismoquadrado {
+  display: flex;
+  height: 600px;
+  width: 100%;
+}
+
+/* div foto */
+.imgdiv {
+  width: 50%; /* Agora ocupa metade da tela */
+  height: 100%; /* Garante altura igual ao container */
+}
+
+/* imagem */
+.imgp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha bem o espaço sem distorcer */
+}
+
+/* div texto */
+.textodiv {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* opcional, para respiro interno */
+}
+
+/* texto */
+.texto {
+  color: #e9e3d0;
+  font-size: 23px;
+  text-align: center;
+}
+
+/* Container principal com imagem à direita */
+.turismoquadradoe {
+  display: flex;
+  height: 600px; 
+  width: 100%;
+}
+
+/* Texto à esquerda */
+.textodive {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Parágrafo de texto */
+.textoe {
+  max-width: 700px;
+  color: #e9e3d0;
+  text-align: center;
+  font-size: 23px;
+}
+
+/* Imagem à direita */
+.imgdive {
+  display: flex;
+  width: 50%; /* Corrigido de 52% para 50% */
+  height: 100%;
+}
+
+/* Imagem */
+.imgpe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche mantendo proporção */
+}
+
+@media screen and (max-width: 768px) {
+	#inicio{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+}
