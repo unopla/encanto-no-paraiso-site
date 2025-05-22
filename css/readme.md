@@ -1,2 +1,0 @@
-kelvin noiado
-keuvyn
