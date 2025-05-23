@@ -1,155 +1,191 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: black;
-    background-color: #5F634F;
-    display: flex;
-    flex-direction: column; 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-/* cabeçalho */
-#header {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #5F634F;
+  overflow-x: hidden; /* evita overflow lateral */
+}
+
+#fim {
+  padding: 50px;
+}
+
+#inicio {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#quadrado {
+  text-align: center;
+  max-width: 1100px;
+  height:100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #CFE8C9;
+}
+
+#titlediv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#titletexto {
+  max-width: 800px;
+  color:#5D3A00;
+  font-size: 32px;
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#nossa {
+  padding: 20px;
+}
+
+#textocaixa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#texto {
+  max-width: 1200px;
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: "Georgia", serif;
+  color:black;
+  text-align: justify;
+}
+
+/* imagem  */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 100px;
+  height: 800px;
+  box-sizing: border-box;
+}
+
+.foto {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo à esquerda, menu à direita */
-  position: fixed;
+  justify-content:center;
   width: 100%;
-  background-color: #CFE8C9;
-  z-index: 1000;
+  max-width: auto;
+  height:auto;
 }
 
-.logo {
-  width: 90px;
+.imagem {
+  border-radius: 10px;
   height: auto;
-  padding:1px
+  max-width: 100%;
+  width:100%;
 }
 
-#titulo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0;
-  color: #5D3A00;
-  height:auto;
+#texto1 {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-#menu {
+.descricao {
+  max-width: 740px;
+  margin-top: 15px;
+  color: #e9e3d0;
+  text-align: center;
+  font-size: 23px;
+}
+
+.escritas {
+  padding: 11px;
+  color: #e9e3d0;
+  text-align: justify;
+  font-size: 22px;
+}
+#linkreserve {
   display: flex;
-  gap: 50px;
-  color: #556B2F;
-  font-size: 18px;
-  height:auto;
-  padding-right:60px
+  justify-content: center; /* Centraliza horizontalmente o link na tela */
+  align-items: center;     /* Centraliza verticalmente */
 }
-.bottom:hover{
+
+#linkbonito {
+  display: flex;
+  align-items: center;     /* Centraliza verticalmente imagem e texto */
+  text-decoration: none;
+  color: black;
+}
+
+#imgdivab {
+  padding: 10px;
+}
+
+#imgab {
+  height: 50px;
+}
+a{
+  text-decoration: none;
+  color: black ;
+}
+#linkbonito:hover{
 	transform: translateY(-2px);
 	background-color: #b7d7ae;
 }
-.bottom {
-	 display: flex;
-     justify-content: center;  /* Centraliza horizontalmente */
-     align-items: center;      /* Centraliza verticalmente */
-     height:30px;
-	 width:90px;
-	 border-radius:10px;
-}
-.bottom1{
-  color:#556B2F;
-  text-decoration: none;
-}
-/* fim cabeçalho */
-#fim{
-  padding: 50px;
-}
-/* fim cabeçalho */
 
 
 
+@media screen and (max-width: 768px) {
+  #fim {
+    padding: 100px 20px;
+  }
 
+  #inicio {
+    flex-direction: column;
+    padding: 0 15px;
+	height:auto;
+  }
 
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+	height:auto;
+  }
 
+  #titletexto {
+    font-size: 24px;
+    padding: 10px;
+  }
 
-/* footer */
-/* parte dos tres quadradinhos com informaçoes  */
-.rodape {
-  display: flex;
-  flex-wrap: wrap;         /* Centraliza os itens filhos */
-  align-items: center;     /* Centraliza verticalmente dentro da altura */
-  height: 300px;
-  width: 100%;
-  padding: 30px;
-  color: #fff;
-  text-align: center;
-  justify-content: space-evenly;
-}
-.infos {
-  display:flex; 
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  height: 200px;
-  background-color: #CFE8C9;
-  color: black;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  box-sizing: border-box;
-  padding:20px;
-}
+  #texto {
+    font-size: 18px;
+  }
 
-#titlerodape{
-padding: 15px;
-font-size: 17px;
-}
-/* caixa das escritas e fotos do info */
-.caixainteira{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
+  .descricao {
+    font-size: 18px;
+  }
 
-}
-.caixainteira:hover {
-  transform: translateY(-2px);
-}
-
-/* imagens do lado das escritas da parte dos contatos  */
-.img{
-  display: flex;
-  width: 30px;
-  height: 30px;
-}
-
-/* imagen das redes sociais  */
-.imgr{
-  display: flex;
-  width: 25px;
-  height: 25px;
-
-}
-/* botões e links permanecem como já tinha */
-.learnmorebtn {
-  display: block;
-  color:black;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  text-decoration: none;
-  background: transparent;
-  cursor: pointer;
-  transition: transform 0.1s ease-in-out;
-  font-size: 17px;
-}
-.learnmorebtn:hover {
-  transform: translateY(-2px);
+  .escritas {
+    font-size: 18px;
+  }
+  .foto{
+	  padding-top:50px;
+  }
 }
