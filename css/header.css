@@ -112,7 +112,7 @@
   justify-content: center;
   align-items: center;
   width: 25%;
-  min-height: 200px;
+  height:200px;
   background-color: #CFE8C9;
   color: black;
   border-radius: 10px;
@@ -121,16 +121,42 @@
   padding: 20px;
   margin: 10px;
 }
+.infosf {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content:center;
+  width: 25%;
+  height:200px;
+  background-color: #CFE8C9;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 10px;
+}
 
 #titlerodape {
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
 }
+#titlerodapep {
+  display:flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-align:center;
+  align-items: center;
+  height:33%;
+}
 
 /* Container de cada link com imagem + texto */
 .caixainteira {
   padding: 5px;
+}
+.caixainteiraf {
+  height:33%;
 }
 
 /* Link que contém imagem e texto lado a lado */
@@ -159,9 +185,9 @@
   gap: 10px;            /* espaço entre imagem e texto */
   color: black;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
   transition: transform 0.1s ease-in-out;
   text-align: left;
   border-radius: 5px;
@@ -192,9 +218,46 @@
     flex-direction: column;
     height: auto;
   }
-  .infos {
+  .infos{
     width: 90%;
     margin-bottom: 20px;
+  }
+
+}
+/* RESPONSIVIDADE PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+  .infosf {
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+  }
+
+  .learnmorebtnf {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #titlerodapep {
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .infosf {
+    width: 90%;
+	height: 100%;
+  }
+
+  .learnmorebtnf {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  #titlerodapep {
+    font-size: 14px;
   }
 }
 /* direitos reservados parte */
@@ -230,4 +293,19 @@
 	padding:5px;
 	text-align:center;
 	font-size:13px;
+}
+@media screen and (max-width: 600px) {
+	#caixadireitos {
+		padding: 12px;
+		padding-bottom:20px;
+	}
+	#caixapequena {
+		width: 100%;
+	}
+	#titulop,
+	#localizacão,
+	#direitosreservados {
+		font-size: 12px;
+		padding: 4px;
+	}
 }
