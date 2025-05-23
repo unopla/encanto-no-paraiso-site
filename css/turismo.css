@@ -152,7 +152,7 @@ body {
     min-height: 200px;
   }
 	 .turismoquadradoe {
-	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+	  flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
     height: auto;
     align-items: center;
   }
@@ -204,8 +204,8 @@ body {
 	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
     height: auto;
     align-items: center;
-	  
   } 
+}
 @media screen and (max-width: 480px) {
 	 .turismoquadradoe {
 	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
