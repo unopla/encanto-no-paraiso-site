@@ -143,10 +143,99 @@ body {
   object-fit: cover; /* Preenche mantendo proporção */
 }
 
-@media screen and (max-width: 768px) {
-	#inicio{
-		display:flex;
-		flex-direction: column;
-		align-items: center;
+@media screen and (max-width: 1024px) {
+#titlediv {
+  margin-top: 40px;
 }
+  #quadrado {
+    height: auto;
+    min-height: 200px;
+  }
+	 .turismoquadradoe {
+	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+  }
+  .turismoquadrado{
+	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+	  
+  } 
+  .imgdiv,
+  .imgdive,
+  .textodiv,
+  .textodive {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	#titlediv {
+  margin-top: 150px;
+}
+  #inicio {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  #titletexto {
+    font-size: 26px;
+    padding: 16px;
+  }
+  #texto,
+  .texto,
+  .textoe {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .imgdiv,
+  .imgdive {
+    height: 300px;
+  }
+	 .turismoquadradoe {
+	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+  }
+  .turismoquadrado{
+	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+	  
+  } 
+@media screen and (max-width: 480px) {
+	 .turismoquadradoe {
+	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+  }
+  .turismoquadrado{
+	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+	  
+  } 
+	#titlediv {
+  margin-top: 150px;
+}
+  #titletexto {
+    font-size: 18px;
+    padding: 8px;
+  }
+  #texto,
+  .texto,
+  .textoe {
+    font-size: 14px;
+    padding: 6px;
+  }
+  #fim {
+    padding: 20px;
+  }
+  .imgdiv,
+  .imgdive {
+    height: 300px;
+  }
 }
