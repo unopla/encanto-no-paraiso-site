@@ -44,7 +44,7 @@ body {
 
 #titletexto {
   max-width: 800px;
-  color:#5F634F;
+  color: #5D3A00;
   font-size: 32px;
   font-family: "Georgia", serif;
   margin: 0;
@@ -69,7 +69,7 @@ body {
   font-size: 24px;
   line-height: 1.6;
   font-family: "Georgia", serif;
-  color:#5F634F;
+  color:black;
   text-align: justify;
 }
 
