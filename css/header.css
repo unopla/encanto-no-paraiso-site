@@ -103,6 +103,7 @@
   width: 100%;
   color: #fff;
   text-align: center;
+  padding-bottom:20px;
 }
 
 .infos {
@@ -195,4 +196,38 @@
     width: 90%;
     margin-bottom: 20px;
   }
+}
+/* direitos reservados parte */
+
+#caixadireitos{
+	display:flex;
+	padding:20px;
+	width:100%;
+	justify-content: center;
+	align-items:center;
+	background-color: #CFE8C9;
+	flex-direction: column;
+}
+#caixapequena{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	width:auto;
+}
+#titulop{
+	padding:5px;
+	text-align:center;
+	font-size:14px;
+	
+}
+#localizacão{
+	padding:5px;
+	text-align:center;
+	font-size:14px;
+}
+#direitosreservados{
+	padding:5px;
+	text-align:center;
+	font-size:13px;
 }
