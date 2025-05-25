@@ -18,7 +18,7 @@ body {
 /* PARTE DEPOIS DO CABECALHO */
 /* Imagen  */
 .imagen {
-  height: 910px;
+  height: 950px;
   width: 100%;
   max-height: 910px;
 }	
@@ -95,4 +95,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
   }
+  .imagen {
+  padding-top: 100px;
+  height: 450px;
+  width: 100%;
+}	
+#imagens{
+	justify-content:center;
+	width: 100%;
+}
 }
