@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #5F634F;
+    display: flex;
+    flex-direction: column; 
+}
+/* fim cabeçalho */
+#fim{
+  padding: 50px;
+}
+
+/* Sobre as cabanas texto depois cabeçalho complicado */
+#inicio{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom:100px;
+}
+#quadrado {
+  text-align: center;
+  max-width: 1100px;
+  height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px; 
+}
+#titlediv{
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+#titletexto{
+  max-width: 800px;
+  color:#e9e3d0 ;
+  font-size: 32px;
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 24px;
+}
+
+#nossa{
+  padding: 20px;
+}
+/* caixa texto sobre */
+#textocaixa{
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+/* texto sobre  */
+#texto {
+  max-width: 1200px;     /* Define uma largura agradável para leitura */  
+  font-size: 24px;    /* Tamanho de texto ajustável */
+  line-height: 1.6;     /* Espaçamento entre linhas para melhorar a legibilidade */
+  font-family: "Georgia", serif;
+  color: #e9e3d0 ;
+}
+/* sobre o turismo */
+/* texto direita */
+
+.turismoquadrado {
+  display: flex;
+  height: 600px;
+  width: 100%;
+}
+#caixatotal{
+	padding-top:40px;
+}
+
+/* div foto */
+.imgdiv {
+  width: 50%; /* Agora ocupa metade da tela */
+  height: 100%; /* Garante altura igual ao container */
+}
+
+/* imagem */
+.imgp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha bem o espaço sem distorcer */
+}
+
+/* div texto */
+.textodiv {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; /* opcional, para respiro interno */
+}
+.titlev{
+  flex-direction: column;
+  padding-bottom: 20px;
+  color:#e9e3d0 ;
+  font-size: 24px;
+  text-align: justify;
+}
+
+/* texto */
+.texto {
+  color: #e9e3d0;
+  font-size: 24px;
+  text-align: center;
+  text-align: justify;
+  gap: 10px;
+}
+
+/* Container principal com imagem à direita */
+.turismoquadradoe {
+  display: flex;
+  height: 600px; 
+  width: 100%;
+  
+}
+
+/* Texto à esquerda */
+.textodive {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+/* Parágrafo de texto */
+.textoe {
+  max-width: 100%;
+  color: #e9e3d0;
+  text-align: center;
+  font-size: 24px;
+  text-align: justify;
+}
+
+/* Imagem à direita */
+.imgdive {
+  display: flex;
+  width: 50%; /* Corrigido de 52% para 50% */
+  height: 100%;
+}
+
+/* Imagem */
+.imgpe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche mantendo proporção */
+}
+
+@media screen and (max-width: 1024px) {
+#titlediv {
+  margin-top: 40px;
+}
+.titlev{
+  flex-direction: column;
+  padding-bottom: 20px;
+  color:#e9e3d0 ;
+  font-size: 15px;
+  text-align: justify;
+}
+  #quadrado {
+    height: auto;
+    min-height: 200px;
+  }
+	 .turismoquadradoe {
+	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .turismoquadrado{
+	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+	  
+  } 
+  .imgdiv,
+  .imgdive,
+  .textodiv,
+  .textodive {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	#titlediv {
+  margin-top: 150px;
+}
+  #inicio {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  #titletexto {
+    font-size: 26px;
+    padding: 16px;
+  }
+.titlev{
+  flex-direction: column;
+  padding-bottom: 20px;
+  color:#e9e3d0 ;
+  font-size: 15px;
+  text-align: justify;
+}
+  #texto,
+  .texto,
+  .textoe {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .imgdiv,
+  .imgdive {
+    height: 300px;
+  }
+	 .turismoquadradoe {
+	flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .turismoquadrado{
+	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;  
+  }
+}
+@media screen and (max-width: 480px) {
+	 .turismoquadradoe {
+	  flex-direction: column-reverse; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .turismoquadrado{
+	  flex-direction: column; /* FOTO EM CIMA, TEXTO EMBAIXO */
+    height: auto;
+    align-items: center;
+      padding-top: 10px;
+   padding-bottom: 30px;
+	  
+  } 
+	#titlediv {
+  margin-top: 150px;
+}
+.titlev{
+  flex-direction: column;
+  padding-bottom: 20px;
+  color:#e9e3d0 ;
+  font-size: 15px;
+  text-align: justify;
+}
+  #titletexto {
+    font-size: 18px;
+    padding: 10px;
+  }
+  #texto,
+  .texto,
+  .textoe {
+    font-size: 14px;
+    padding: 6px;
+  }
+  #fim {
+    padding: 20px;
+  }
+  .imgdiv,
+  .imgdive {
+    height: 300px;
+  }
+}
