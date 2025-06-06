@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre a Encanto no Paraiso</title>
+  <link rel="stylesheet" href="css/sobrenos.css">
+  <link rel="stylesheet" href="css/header.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.jpg">  
+
+
+</head>
+<body>
+<!-- cabeçalho -->
+	
+<div id="header">
+	 
+	 <div class="logo">
+	  <a href="index.php"><img src="img/logo.png" alt="Logo" class="logo"></a>
+	</div>
+	  <div id="titulo">
+		
+		<h3>Encanto no paraíso</h3>
+	  </div>
+	  
+	
+	  <div id="menu">	 
+		<a class="bottom1" href="index.php"> <div class="bottom"> Inicio </div> </a>
+        <a class="bottom1" href="cabanas.php"> <div class="bottom"> Cabana </div> </a>
+		<a class="bottom1" href="turismos.php"><div class="bottom"> Turismos  </div> </a>
+	  </div>
+	  </div>
+	  
+	  
+	
+	<!-- fim cabeçalho -->
+	  <div id="fim">   </div>
+
+	  <!-- escrita sobre as cabanas -->
+	<div id="inicio" class="fade-in">
+		<div id="quadrado">
+			<div id="titlediv">
+				<div id="titletexto">
+					<h2 id="nossa"> Sobre a Encanto no Paraiso</h2>
+				</div>
+			</div>
+			<div id="textocaixa">
+				<div id="texto">
+					<p>Somos uma família que viveu grande parte da vida nas grandes cidades, em meio à correria do dia a dia e ao ritmo acelerado da vida urbana. Foi então que chegamos a São Vendelino, um verdadeiro refúgio — um pequeno paraíso que nos proporcionou paz, contato com a natureza e uma nova perspectiva de vida.</p><br>
+          <p> Ao vivenciar essa transformação, percebemos o quanto um ambiente acolhedor e natural pode impactar positivamente o bem-estar das pessoas. Assim nasceu a ideia, em uma conversa familiar, de criar um espaço que pudesse oferecer essa mesma experiência a outras famílias.</p><br>
+          <p> Com muito carinho e dedicação, construímos o que hoje é conhecido como Encanto no Paraíso — um lugar pensado para ser um refúgio de tranquilidade, beleza e conexão com a natureza. Mais do que um empreendimento, é a realização de um sonho e um convite para que você também descubra o encanto de viver momentos inesquecíveis em meio à natureza </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="fadein.js"></script>	
+</body>
+<footer>
+<div class="rodape">
+  <div class="infos">
+    <div id="titlerodape">
+      <h2>Midias Sociais</h2>
+    </div>
+
+    <div class="caixainteira">
+      <a class="learnmorebtn" target="_blank" href="https://www.instagram.com/encantonoparaiso/">
+        <div class="imgr">
+          <img src="img/inta.png" title="instagram" alt="Instagram">
+        </div>
+        Instagram
+      </a>
+    </div>
+
+    <div class="caixainteira">
+      <a class="learnmorebtn" target="_blank" href="https://www.tiktok.com/@encanto.no.paraso?lang=en">
+        <div class="imgr">
+          <img src="img/tiktok3.png" title="tiktok" alt="TikTok">
+        </div>
+        Tik Tok
+      </a>
+    </div>
+  </div>
+
+  <div class="infos">
+    <div id="titlerodape">
+      <h2>Contatos</h2>
+    </div>
+
+    <div class="caixainteira">
+      <a class="learnmorebtn" target="_blank" href="https://api.whatsapp.com/send?phone=5551997851245">
+        <div class="img">
+          <img src="img/whats.png" title="whatsapp" alt="Whatsapp">
+        </div>
+        (51) 5199785-1245
+      </a>
+    </div>
+
+    <div class="caixainteira">
+      <a class="learnmorebtn" target="_blank" href="mailto:encantonoparaiso@gmail.com">
+        <div class="img">
+          <img src="img/email.png" title="email" alt="Email">
+        </div>
+        encantonoparaiso@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <div class="infosf">
+    <div id="titlerodapep">
+      <h2>Informações Importantes</h2>
+    </div>
+	<div class="caixainteiraf">
+    <a class="learnmorebtnf" href="sobrenos.php">Sobre a Encanto no Paraíso</a>
+	</div>
+	<div class="caixainteiraf">
+    <a class="learnmorebtnf" href="reserve.php">Onde Reservar</a>
+	</div>
+  </div>
+</div>
+
+<div id="caixadireitos">
+
+<div id="caixapequena">
+
+<div id="titulop">
+<h3> Encanto no Paraiso </h3>
+</div>
+
+<div id="localizacão">
+<p> Rua José Wilrich - 905 - Estrada Vale Suiço - Interior</p>
+<p> São Vendelino, Rio Grande Do Sul - Brasil
+</div>
+
+<div id="direitosreservados">
+<p> Desenvolvido por: </p>
+<p>2025 © Kelvin Adam Arcari | Todos os direitos reservados.
+</div>
+
+
+
+</div>
+
+
+</footer>
+</html>
