@@ -78,7 +78,7 @@ Ideal para quem busca vivências autênticas, roteiros personalizados e o charme
 	</div>
 
 	<div class="imgdive">
-		<img src="img/vinicola1.jpg" class="imgpe">
+		<img src="img/vinicola12.jpg" class="imgpe">
 	</div>
 </div>
 
