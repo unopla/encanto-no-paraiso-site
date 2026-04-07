@@ -1,139 +1,319 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8">
-		<title>Onde Reservar</title>
-		<link rel="stylesheet" href="css/reserve.css">
-		<link rel="stylesheet" href="css/header.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="img/favicon.ico">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">  
-	</head>
-	<body>
-<!-- header -->
-		<header>
-			<div class="logo">
-				<a href="index.php"><img src="img/logo.webp" alt="Logo" class="logo"></a>
-			</div>
-			<div id="titulo">
-			
-				<h3>Encanto no paraíso</h3>
-			</div>
-			<div id="menu">	 
-				<a class="bottom1" href="index.php"> <div class="bottom"> Inicio </div> </a>
-				<a class="bottom1" href="turismos.php"><div class="bottom"> Turismos  </div> </a>
-			</div>
-		</header>	
-<!-- fim header -->
-		<div id="fim">   </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Faça sua reserva — Encanto no Paraíso. Reserve sua estadia na nossa cabana premium em São Vendelino com segurança pelo Airbnb.">
+  <title>Reservar — Encanto no Paraíso</title>
+  <link rel="icon" type="image/png" href="IMG/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .reserve-page-wrap {
+      min-height: 100vh;
+      background: var(--cream);
+    }
+    .reserve-top {
+      background: linear-gradient(135deg, var(--green-dark) 0%, #2C5C3F 100%);
+      padding: 160px 24px 120px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .reserve-top::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.05;
+      background-image: radial-gradient(circle at 20% 30%, #fff 1px, transparent 1px),
+                        radial-gradient(circle at 80% 70%, #fff 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .reserve-top .container { position: relative; z-index: 1; }
+    .reserve-top h1 { color: #fff; margin-bottom: 16px; }
+    .reserve-top p  { color: rgba(255,255,255,0.72); max-width: 520px; margin: 0 auto; font-size: 1.05rem; }
 
-<!-- escrita sobre as cabanas -->
-		<section id="inicio" class="fade-in">
-			<div id="quadrado">
-				<div id="titlediv">
-					<div id="titletexto">
-						<h2 id="nossa"> Faça Sua Reserva </h2>
-					</div>
-				</div>
-				<div id="textocaixa">
-					<div id="texto">
-						<p>Se você está buscando um lugar acolhedor, rodeado de beleza natural e perfeito para relaxar com a família ou amigos, essa é a sua oportunidade. Nosso espaço está disponível para reservas diretamente pelo Airbnb, com toda a segurança e praticidade que a plataforma oferece.</p><br>
-						<p>📅 Reserve agora mesmo e garanta sua data!</p><br>
-						<p>Clique na imagem abaixo para acessar nossa página no Airbnb:</p>
-						<div id="linkreserve">
-							<a id="linkbonito" target="_blank" href="https://www.airbnb.com.br/rooms/676243864444440577?source_impression_id=p3_1748041550_P3bOYT6lLRtDBOM1">
-								<div id="imgdivab">
-									<img src="img/airbnb.webp" id="imgab" title="airbnb" alt="airbnb">
-								</div>
-								<h1>Airbnb</h1>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<script src="fadein.js" defer></script>	
-	</body>
-	<footer>
-<!-- informacoes do footer -->
-		<section class="rodape">
+    .reserve-main {
+      max-width: 700px;
+      margin: -64px auto 0;
+      padding: 0 24px 80px;
+      position: relative;
+      z-index: 5;
+    }
 
-<!-- cobre todas as informacoes -->
-			<div class="infos">
-				<div id="titlerodape">
-					<h2>Midias Sociais</h2>
-				</div>
+    .reserve-card-main {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      border: 1px solid rgba(201,169,110,0.12);
+    }
+    .reserve-card-header {
+      background: var(--cream);
+      padding: 28px 36px;
+      border-bottom: 1px solid rgba(201,169,110,0.15);
+    }
+    .reserve-card-header h3 { font-size: 1.3rem; }
+    .reserve-card-header p  { font-size: 0.9rem; color: var(--text-muted); margin-top: 4px; }
+    .reserve-card-body { padding: 36px; }
 
-				<div class="caixainteira">
-					<a class="learnmorebtn" target="_blank" href="https://www.instagram.com/encantonoparaiso/">
-						<div class="imgr">
-							<img src="img/inta.webp" title="instagram" alt="Instagram">
-						</div>
-						Instagram
-					</a>
-				</div>
+    .airbnb-btn {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: linear-gradient(135deg, #FF5A5F, #E31C5F);
+      color: #fff;
+      border-radius: var(--radius-md);
+      padding: 20px 28px;
+      margin-bottom: 24px;
+      transition: var(--transition);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .airbnb-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 32px rgba(255,90,95,0.35);
+      color: #fff;
+    }
+    .airbnb-btn img { width: 52px; height: 52px; object-fit: contain; filter: brightness(10); }
+    .airbnb-btn .ab-text h4 { color: #fff; font-size: 1.1rem; }
+    .airbnb-btn .ab-text p  { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+    .airbnb-btn .ab-arrow {
+      margin-left: auto;
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
 
-				<div class="caixainteira">
-					<a class="learnmorebtn" target="_blank" href="https://www.tiktok.com/@encanto.no.paraso?lang=en">
-						<div class="imgr">
-							<img src="img/tiktok3.webp" title="tiktok" alt="TikTok">
-						</div>
-						Tik Tok
-				  </a>
-				</div>
-			</div>
-<!-- outra de informações -->
-			<div class="infos">
-				<div id="titlerodape">
-					<h2>Contatos</h2>
-				</div>
+    .divider-or {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 24px 0;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .divider-or::before, .divider-or::after {
+      content: ''; flex: 1; height: 1px; background: var(--cream-dark);
+    }
 
-				<div class="caixainteira">
-					<a class="learnmorebtn" target="_blank" href="https://api.whatsapp.com/send?phone=5551997851245">
-						<div class="img">
-							<img src="img/whats.webp" title="whatsapp" alt="Whatsapp">
-						</div>
-						(51) 5199785-1245
-					</a>
-				</div>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .contact-block {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 18px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--cream-dark);
+      transition: var(--transition);
+      color: var(--text-body);
+      text-decoration: none;
+    }
+    .contact-block:hover {
+      border-color: var(--green-mid);
+      background: var(--cream);
+      transform: translateY(-2px);
+    }
+    .contact-block .cb-icon {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.2rem;
+    }
+    .contact-block.whats .cb-icon { background: #25D366; }
+    .contact-block.email .cb-icon { background: var(--green-mid); }
+    .contact-block.insta .cb-icon { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+    .contact-block.tiktok .cb-icon { background: #000; }
+    .contact-block h4 { font-size: 0.9rem; color: var(--green-dark); margin-bottom: 2px; }
+    .contact-block p  { font-size: 0.78rem; color: var(--text-muted); }
 
-				<div class="caixainteira">
-					<a class="learnmorebtn" target="_blank" href="mailto:encantonoparaiso@gmail.com">
-						<div class="img">
-							<img src="img/email.webp" title="email" alt="Email">
-						</div>
-						encantonoparaiso@gmail.com
-					</a>
-				</div>
-			</div>
+    .info-box {
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 24px;
+      border-left: 4px solid var(--gold);
+    }
+    .info-box h4 { color: var(--green-dark); margin-bottom: 12px; }
+    .info-box ul { display: flex; flex-direction: column; gap: 8px; }
+    .info-box ul li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      padding-left: 16px;
+      position: relative;
+    }
+    .info-box ul li::before {
+      content: '✦';
+      position: absolute; left: 0;
+      color: var(--gold);
+      font-size: 0.65rem;
+      top: 4px;
+    }
+  </style>
+</head>
+<body class="reserve-page-wrap">
 
-			<div class="infosf">
-				<div id="titlerodapep">
-					<h2>Informações Importantes</h2>
-				</div>
-				<div class="caixainteiraf">
-					<a class="learnmorebtnf" href="sobrenos.php">Sobre a Encanto no Paraíso</a>
-				</div>
-				<div class="caixainteiraf">
-					<a class="learnmorebtnf" href="reserve.php">Onde Reservar</a>
-				</div>
-			</div>
-		</section>
+<!-- ══ HEADER ══════════════════════════════════════════════ -->
+<header class="site-header scrolled" role="banner">
+  <a href="index.html" class="header-logo">
+    <img src="IMG/logo.webp" alt="Logo Encanto no Paraíso">
+    <span class="header-logo-text">Encanto no Paraíso</span>
+  </a>
+  <nav class="header-nav">
+    <a href="index.html"    class="nav-link">Início</a>
+    <a href="cabanas.html"  class="nav-link">Cabana</a>
+    <a href="turismos.html" class="nav-link">Turismo</a>
+    <a href="sobrenos.html" class="nav-link">Sobre Nós</a>
+  </nav>
+  <a href="reserve.html" class="btn btn-gold header-cta">Reservar Agora</a>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-menu">
+  <a href="index.html"    class="nav-link">Início</a>
+  <a href="cabanas.html"  class="nav-link">Cabana</a>
+  <a href="turismos.html" class="nav-link">Turismo</a>
+  <a href="sobrenos.html" class="nav-link">Sobre Nós</a>
+  <a href="reserve.html"  class="btn btn-gold" style="margin-top:8px;">Reservar Agora</a>
+</nav>
 
-		<section id="caixadireitos">
-			<div id="caixapequena">
-				<div id="titulop">
-					<h3> Encanto no Paraiso </h3>
-				</div>
-				<div id="localizacão">
-					<p> Rua José Wilrich - 905 - Estrada Vale Suiço - Interior</p>
-					<p> São Vendelino, Rio Grande Do Sul - Brasil</p>
-				</div>
-				<div id="direitosreservados">
-					<p> Desenvolvido por: </p>
-					<p>2025 © Kelvin Adam Arcari | Todos os direitos reservados.</p>
-				</div>
-			</div>
-		</section>
-	</footer>
+<!-- ══ HERO ══ -->
+<div class="reserve-top">
+  <div class="container">
+    <span class="section-label" style="color:var(--gold-light); justify-content:center; display:flex; margin-bottom:16px;">Reserve sua Estadia</span>
+    <h1>Faça sua reserva com segurança</h1>
+    <p>Escolha a plataforma de sua preferência e garanta sua data na nossa cabana exclusiva na Serra Gaúcha.</p>
+  </div>
+</div>
+
+<!-- ══ CARD RESERVA ══ -->
+<div class="reserve-main">
+  <div class="reserve-card-main reveal">
+    <div class="reserve-card-header">
+      <h3>Cabana Encanto no Paraíso</h3>
+      <p>São Vendelino · Serra Gaúcha · Rio Grande do Sul</p>
+    </div>
+    <div class="reserve-card-body">
+
+      <!-- Airbnb -->
+      <a class="airbnb-btn" href="https://www.airbnb.com.br/rooms/676243864444440577?source_impression_id=p3_1748041550_P3bOYT6lLRtDBOM1" target="_blank" rel="noopener" aria-label="Reservar pelo Airbnb">
+        <img src="IMG/airbnb.webp" alt="Airbnb">
+        <div class="ab-text">
+          <h4>Reservar pelo Airbnb</h4>
+          <p>Plataforma segura · Pagamento protegido · Cancelamento flexível</p>
+        </div>
+        <div class="ab-arrow">→</div>
+      </a>
+
+      <div class="divider-or">ou entre em contato direto</div>
+
+      <!-- Contatos diretos -->
+      <div class="contact-grid">
+        <a class="contact-block whats" href="https://api.whatsapp.com/send?phone=5551997851245" target="_blank" rel="noopener">
+          <div class="cb-icon">
+            <img src="IMG/whats.webp" alt="WhatsApp" style="width:24px; filter:brightness(10);">
+          </div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>(51) 99785-1245</p>
+          </div>
+        </a>
+
+        <a class="contact-block email" href="mailto:encantonoparaiso@gmail.com">
+          <div class="cb-icon">
+            <img src="IMG/email.webp" alt="Email" style="width:22px; filter:brightness(10);">
+          </div>
+          <div>
+            <h4>E-mail</h4>
+            <p>encantonoparaiso@gmail.com</p>
+          </div>
+        </a>
+
+        <a class="contact-block insta" href="https://www.instagram.com/encantonoparaiso/" target="_blank" rel="noopener">
+          <div class="cb-icon">
+            <img src="IMG/inta.webp" alt="Instagram" style="width:24px; filter:brightness(10);">
+          </div>
+          <div>
+            <h4>Instagram</h4>
+            <p>@encantonoparaiso</p>
+          </div>
+        </a>
+
+        <a class="contact-block tiktok" href="https://www.tiktok.com/@encanto.no.paraso?lang=en" target="_blank" rel="noopener">
+          <div class="cb-icon">
+            <img src="IMG/tiktok3.webp" alt="TikTok" style="width:22px; filter:brightness(10);">
+          </div>
+          <div>
+            <h4>TikTok</h4>
+            <p>@encanto.no.paraso</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Info box -->
+      <div class="info-box">
+        <h4>📋 Informações para reserva</h4>
+        <ul>
+          <li>Recomendamos reservar com antecedência, especialmente em feriados e alta temporada</li>
+          <li>O check-in e check-out são combinados diretamente com o anfitrião</li>
+          <li>A cabana é exclusiva e privativa — apenas os hóspedes terão acesso à propriedade</li>
+          <li>Animais de estimação: consulte disponibilidade pelo WhatsApp</li>
+          <li>Pagamento seguro e facilitado pelo Airbnb ou negociado diretamente</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="IMG/logo.webp" alt="Logo">
+      <h3>Encanto no Paraíso</h3>
+      <p>Uma cabana no coração da Serra Gaúcha, onde natureza, conforto e paz se encontram.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="cabanas.html">🏡 Nossa Cabana</a></li>
+        <li><a href="turismos.html">🗺 Turismo</a></li>
+        <li><a href="sobrenos.html">💚 Sobre Nós</a></li>
+        <li><a href="reserve.html">📅 Reservar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul class="footer-links">
+        <li><a href="https://api.whatsapp.com/send?phone=5551997851245" target="_blank">📱 (51) 99785-1245</a></li>
+        <li><a href="mailto:encantonoparaiso@gmail.com">✉️ encantonoparaiso@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Localização</h4>
+      <ul class="footer-links">
+        <li><a href="#">📍 Rua José Wilrich, 905</a></li>
+        <li><a href="#">São Vendelino, RS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Encanto no Paraíso · São Vendelino, RS, Brasil</p>
+    <p>Desenvolvido por Kelvin Adam Arcari</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
 </html>
