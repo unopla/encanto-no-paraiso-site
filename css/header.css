@@ -2,7 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
-#header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between; /* logo à esquerda, menu à direita */

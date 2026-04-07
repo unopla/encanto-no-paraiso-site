@@ -1,153 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Onde Reservar</title>
-  <link rel="stylesheet" href="css/reserve.css">
-  <link rel="stylesheet" href="css/header.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="img/favicon.jpg">  
+	<head>
+		<meta charset="UTF-8">
+		<title>Onde Reservar</title>
+		<link rel="stylesheet" href="css/reserve.css">
+		<link rel="stylesheet" href="css/header.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="img/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	</head>
+	<body>
+<!-- header -->
+		<header>
+			<div class="logo">
+				<a href="index.php"><img src="img/logo.webp" alt="Logo" class="logo"></a>
+			</div>
+			<div id="titulo">
+			
+				<h3>Encanto no paraíso</h3>
+			</div>
+			<div id="menu">	 
+				<a class="bottom1" href="index.php"> <div class="bottom"> Inicio </div> </a>
+				<a class="bottom1" href="turismos.php"><div class="bottom"> Turismos  </div> </a>
+			</div>
+		</header>	
+<!-- fim header -->
+		<div id="fim">   </div>
 
-
-</head>
-<body>
-<!-- cabeçalho -->
-	
-<div id="header">
-	 
-	 <div class="logo">
-	  <a href="index.php"><img src="img/logo.png" alt="Logo" class="logo"></a>
-	</div>
-	  <div id="titulo">
-		
-		<h3>Encanto no paraíso</h3>
-	  </div>
-	  
-	
-	  <div id="menu">	 
-		<a class="bottom1" href="index.php"> <div class="bottom"> Inicio </div> </a>
-        <a class="bottom1" href="cabanas.php"> <div class="bottom"> Cabana </div> </a>
-		<a class="bottom1" href="turismos.php"><div class="bottom"> Turismos  </div> </a>
-	  </div>
-	  </div>
-	  
-	  
-	
-	<!-- fim cabeçalho -->
-	  <div id="fim">   </div>
-
-	  <!-- escrita sobre as cabanas -->
-	<div id="inicio" class="fade-in">
-		<div id="quadrado">
-			<div id="titlediv">
-				<div id="titletexto">
-					<h2 id="nossa"> Faça Sua Reserva </h2>
+<!-- escrita sobre as cabanas -->
+		<section id="inicio" class="fade-in">
+			<div id="quadrado">
+				<div id="titlediv">
+					<div id="titletexto">
+						<h2 id="nossa"> Faça Sua Reserva </h2>
+					</div>
+				</div>
+				<div id="textocaixa">
+					<div id="texto">
+						<p>Se você está buscando um lugar acolhedor, rodeado de beleza natural e perfeito para relaxar com a família ou amigos, essa é a sua oportunidade. Nosso espaço está disponível para reservas diretamente pelo Airbnb, com toda a segurança e praticidade que a plataforma oferece.</p><br>
+						<p>📅 Reserve agora mesmo e garanta sua data!</p><br>
+						<p>Clique na imagem abaixo para acessar nossa página no Airbnb:</p>
+						<div id="linkreserve">
+							<a id="linkbonito" target="_blank" href="https://www.airbnb.com.br/rooms/676243864444440577?source_impression_id=p3_1748041550_P3bOYT6lLRtDBOM1">
+								<div id="imgdivab">
+									<img src="img/airbnb.webp" id="imgab" title="airbnb" alt="airbnb">
+								</div>
+								<h1>Airbnb</h1>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div id="textocaixa">
-				<div id="texto">
-					<p>Se você está buscando um lugar acolhedor, rodeado de beleza natural e perfeito para relaxar com a família ou amigos, essa é a sua oportunidade. Nosso espaço está disponível para reservas diretamente pelo Airbnb, com toda a segurança e praticidade que a plataforma oferece.</p><br>
-<p>
-📅 Reserve agora mesmo e garanta sua data!</p><br>
-<p>Clique na imagem abaixo para acessar nossa página no Airbnb:</p>
-<div id="linkreserve">
-  <a id="linkbonito" target="_blank" href="https://www.airbnb.com.br/rooms/676243864444440577?source_impression_id=p3_1748041550_P3bOYT6lLRtDBOM1">
-    <div id="imgdivab">
-      <img src="img/airbnb.png" id="imgab" title="airbnb" alt="airbnb">
-    </div>
-    <h1>Airbnb</h1>
-  </a>
-</div>
+		</section>
+		<script src="fadein.js" defer></script>	
+	</body>
+	<footer>
+<!-- informacoes do footer -->
+		<section class="rodape">
+
+<!-- cobre todas as informacoes -->
+			<div class="infos">
+				<div id="titlerodape">
+					<h2>Midias Sociais</h2>
+				</div>
+
+				<div class="caixainteira">
+					<a class="learnmorebtn" target="_blank" href="https://www.instagram.com/encantonoparaiso/">
+						<div class="imgr">
+							<img src="img/inta.webp" title="instagram" alt="Instagram">
+						</div>
+						Instagram
+					</a>
+				</div>
+
+				<div class="caixainteira">
+					<a class="learnmorebtn" target="_blank" href="https://www.tiktok.com/@encanto.no.paraso?lang=en">
+						<div class="imgr">
+							<img src="img/tiktok3.webp" title="tiktok" alt="TikTok">
+						</div>
+						Tik Tok
+				  </a>
 				</div>
 			</div>
-		</div>
-	</div>
-	<script src="fadein.js"></script>	
-</body>
-<footer>
-<div class="rodape">
-  <div class="infos">
-    <div id="titlerodape">
-      <h2>Midias Sociais</h2>
-    </div>
+<!-- outra de informações -->
+			<div class="infos">
+				<div id="titlerodape">
+					<h2>Contatos</h2>
+				</div>
 
-    <div class="caixainteira">
-      <a class="learnmorebtn" target="_blank" href="https://www.instagram.com/encantonoparaiso/">
-        <div class="imgr">
-          <img src="img/inta.png" title="instagram" alt="Instagram">
-        </div>
-        Instagram
-      </a>
-    </div>
+				<div class="caixainteira">
+					<a class="learnmorebtn" target="_blank" href="https://api.whatsapp.com/send?phone=5551997851245">
+						<div class="img">
+							<img src="img/whats.webp" title="whatsapp" alt="Whatsapp">
+						</div>
+						(51) 5199785-1245
+					</a>
+				</div>
 
-    <div class="caixainteira">
-      <a class="learnmorebtn" target="_blank" href="https://www.tiktok.com/@encanto.no.paraso?lang=en">
-        <div class="imgr">
-          <img src="img/tiktok3.png" title="tiktok" alt="TikTok">
-        </div>
-        Tik Tok
-      </a>
-    </div>
-  </div>
+				<div class="caixainteira">
+					<a class="learnmorebtn" target="_blank" href="mailto:encantonoparaiso@gmail.com">
+						<div class="img">
+							<img src="img/email.webp" title="email" alt="Email">
+						</div>
+						encantonoparaiso@gmail.com
+					</a>
+				</div>
+			</div>
 
-  <div class="infos">
-    <div id="titlerodape">
-      <h2>Contatos</h2>
-    </div>
+			<div class="infosf">
+				<div id="titlerodapep">
+					<h2>Informações Importantes</h2>
+				</div>
+				<div class="caixainteiraf">
+					<a class="learnmorebtnf" href="sobrenos.php">Sobre a Encanto no Paraíso</a>
+				</div>
+				<div class="caixainteiraf">
+					<a class="learnmorebtnf" href="reserve.php">Onde Reservar</a>
+				</div>
+			</div>
+		</section>
 
-    <div class="caixainteira">
-      <a class="learnmorebtn" target="_blank" href="https://api.whatsapp.com/send?phone=5551997851245">
-        <div class="img">
-          <img src="img/whats.png" title="whatsapp" alt="Whatsapp">
-        </div>
-        (51) 5199785-1245
-      </a>
-    </div>
-
-    <div class="caixainteira">
-      <a class="learnmorebtn" target="_blank" href="mailto:encantonoparaiso@gmail.com">
-        <div class="img">
-          <img src="img/email.png" title="email" alt="Email">
-        </div>
-        encantonoparaiso@gmail.com
-      </a>
-    </div>
-  </div>
-
-  <div class="infosf">
-    <div id="titlerodapep">
-      <h2>Informações Importantes</h2>
-    </div>
-	<div class="caixainteiraf">
-    <a class="learnmorebtnf" href="sobrenos.php">Sobre a Encanto no Paraíso</a>
-	</div>
-	<div class="caixainteiraf">
-    <a class="learnmorebtnf" href="reserve.php">Onde Reservar</a>
-	</div>
-  </div>
-</div>
-
-<div id="caixadireitos">
-
-<div id="caixapequena">
-
-<div id="titulop">
-<h3> Encanto no Paraiso </h3>
-</div>
-
-<div id="localizacão">
-<p> Rua José Wilrich - 905 - Estrada Vale Suiço - Interior</p>
-<p> São Vendelino, Rio Grande Do Sul - Brasil
-</div>
-
-<div id="direitosreservados">
-<p> Desenvolvido por: </p>
-<p>2025 © Kelvin Adam Arcari | Todos os direitos reservados.
-</div>
-
-
-
-</div>
-
-</footer>
+		<section id="caixadireitos">
+			<div id="caixapequena">
+				<div id="titulop">
+					<h3> Encanto no Paraiso </h3>
+				</div>
+				<div id="localizacão">
+					<p> Rua José Wilrich - 905 - Estrada Vale Suiço - Interior</p>
+					<p> São Vendelino, Rio Grande Do Sul - Brasil</p>
+				</div>
+				<div id="direitosreservados">
+					<p> Desenvolvido por: </p>
+					<p>2025 © Kelvin Adam Arcari | Todos os direitos reservados.</p>
+				</div>
+			</div>
+		</section>
+	</footer>
 </html>
