@@ -69,11 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroBg = document.querySelector('.hero-bg img');
   if (heroBg) {
     heroBg.style.transform = 'scale(1.05)';
-    window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY;
-      const rate = scrolled * 0.3;
-      heroBg.style.transform = `scale(1.05) translateY(${rate}px)`;
-    }, { passive: true });
   }
 
   /* ── Slideshow (Cabanas page) ── */

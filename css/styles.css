@@ -196,6 +196,23 @@ p  { line-height: 1.75; color: var(--text-body); }
   border-radius: 50%;
   object-fit: cover;
 }
+/* padrão = header branco (logo preta) */
+.logo-white {
+  opacity: 0;
+}
+
+.logo-dark {
+  opacity: 1;
+}
+
+/* quando estiver no hero (header transparente) */
+.site-header.hero-mode .logo-white {
+  opacity: 1;
+}
+
+.site-header.hero-mode .logo-dark {
+  opacity: 0;
+}
 .header-logo-text {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
