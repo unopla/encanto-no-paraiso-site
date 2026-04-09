@@ -188,17 +188,24 @@ p  { line-height: 1.75; color: var(--text-body); }
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
   text-decoration: none;
+  position: relative;
+  padding-left: 72px;
 }
 .header-logo img {
-  width: 44px; height: 44px;
+  width: 56px; height: 56px;
   border-radius: 50%;
   object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /* padrão = header branco (logo preta) */
 .logo-white {
   opacity: 0;
+  pointer-events: none;
 }
 
 .logo-dark {
@@ -208,10 +215,12 @@ p  { line-height: 1.75; color: var(--text-body); }
 /* quando estiver no hero (header transparente) */
 .site-header.hero-mode .logo-white {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .site-header.hero-mode .logo-dark {
   opacity: 0;
+  pointer-events: none;
 }
 .header-logo-text {
   font-family: 'Playfair Display', serif;
