@@ -36,9 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const open = mobileMenu.classList.contains('open');
       hamburger.setAttribute('aria-expanded', open);
     });
-    // Close on link click
-    mobileMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    // Close on link click or button click
+    mobileMenu.querySelectorAll('.nav-link, .btn').forEach(elem => {
+      elem.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
     });
   }
 
@@ -120,6 +126,29 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'ArrowLeft')  goTo(current - 1);
       if (e.key === 'ArrowRight') goTo(current + 1);
     });
+
+    // Touch support (swipe left/right)
+    let touchStartX = 0;
+    slideshowImg.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, false);
+
+    slideshowImg.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      
+      // Swipe left = next image (diff > 0)
+      // Swipe right = previous image (diff < 0)
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goTo(current + 1);
+        } else {
+          goTo(current - 1);
+        }
+        clearInterval(autoSlide);
+        autoSlide = setInterval(() => goTo(current + 1), 5000);
+      }
+    }, false);
   }
 
   /* ── Smooth anchor links ── */
